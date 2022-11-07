@@ -1,0 +1,12 @@
+extends base.pug
+include mixins/video
+
+
+block content 
+  h2 Welcome here you can see the trending videos!
+  input(placeholder="Write Here!!")
+  button click
+  each potato in videos
+    +video(potato)
+  else 
+      li Sorry Nothing found.
